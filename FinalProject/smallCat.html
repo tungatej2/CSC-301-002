@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	
+  	<title>Cats</title>
+	<meta name="description" content="The HTML5 Herald">
+	<meta name="author" content="SitePoint">
+
+	<link rel="stylesheet" href="css/style.css">
+
+	<!--[if lt IE 9]>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  	<![endif]-->
+</head>
+<body>
+	<script type = "text/javascript">
+        function pic1()
+        {
+            document.getElementById("russianBlue").src = "russianBlue.jpg";
+        }
+        function pic2()
+        {
+            document.getElementById("maineCoon").src ="maineCoon.png";
+        } 
+	</script>
+
+    <img src = "russianBlue.jpg" id = "russianBlue"/> <input type="button" value="Show Russian Blue" onclick="pic1()"/> <input type="button" value="russianBlue"
+    onclick="pic1()"/>
+	<img src = "maineCoon.jpg" id = "maineCoon"/> <input type="button" value="Show maineCoon" onclick="pic2()"/> <input type="button" value="maineCoon"
+    onclick="pic2()"/>
+	
+	<?php
+		$var1 = $_POST['text1'];
+		$var2 = $_POST['display'];
+		
+		echo '$var1 . ' ' . $display . '.''
+	?>
+	
+	<button id="myButton" class="float-left submit-button" >Change your mind?</button>
+
+	<script type="text/javascript">
+    document.getElementById("myButton").onclick = function () {
+        location.href = "form.html";
+    };
+	</script>
+	
+</body>
+</html>
